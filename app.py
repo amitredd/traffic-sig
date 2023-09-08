@@ -53,7 +53,7 @@ labels_dict = {
 }
 
 
-@st.cache_data
+@st.cache
 def sign_predict(image):
     model = load_model('./keras_model/')
     image = np.array(image, dtype=np.float32)
